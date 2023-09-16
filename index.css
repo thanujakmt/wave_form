@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(152, 244, 244);
+  overflow: hidden;
+}
+body .container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(45deg, rgb(134, 110, 159), rgb(148, 197, 199));
+  border-radius: 20px;
+  padding: 40px 60px;
+}
+body h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+body .form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+body input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+}
+body input:focus, body input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+body label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+}
+body label span {
+  font-size: 22px;
+  display: inline-block;
+  min-height: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+body input:focus + label span, body input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+body p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+body p a {
+  text-decoration: none;
+  color: #000000;
+}
+body button {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+body .btn:focus {
+  outline: 0;
+}/*# sourceMappingURL=index.css.map */
