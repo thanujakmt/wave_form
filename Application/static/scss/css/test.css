@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(163, 232, 232);
+  overflow: hidden;
+}
+body .container {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 40px 60px;
+}
+body .container .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(165, 206, 241);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+body .container .name .delete {
+  margin: 10px;
+  font-size: 1.5em;
+}
